@@ -1,1 +1,33 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
 
+main div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+main div div {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main div div:hover {
+  cursor: pointer;
+}
+
+#blackText {
+  font-size: 24px;
+  color: #000 !important;
+}
+
+#whiteText {
+  font-size: 24px;
+  color: #fff !important;
+}

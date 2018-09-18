@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<!--
+   BW Color Contrast AI - index.html
+   Author: Eric Liang
+   Author URI: https://www.eric-liang.com
+   Author Github URI: https://www.github.com/ewliang
+   Project Repository URI: https://github.com/ewliang/BW-Color-Contrast-AI
+   Description: The main UI for color contrast AI.
+   License: GPL v3.0
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>BW Color Contrast AI</title>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
+  </head>
+  <body>
+    <header>
+      <h1>BW Color Contrast AI</h1>
+    </header>
+    <main>
+      <div>
+        <div id = "blackBox">
+          <span id = "blackText">Black</span>
+        </div>
+        <div id = "whiteBox">
+          <span id = "whiteText">White</span>
+        </div>
+      </div>
+      <label for = "toggleTraining"><input type = "checkbox" id = "toggleTraining">Training?</label>
+    </main>
+    <footer>
+      Copyright &copy; 2018 Eric Liang. All Rights Reserved.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.3/brain.min.js"></script>
+    <script type="text/javascript" src = "scripts.js"></script>
+  </body>
+</html>
