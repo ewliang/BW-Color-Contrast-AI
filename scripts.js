@@ -14,8 +14,12 @@ var toggleTraining = document.getElementById('toggleTraining');
 
 var r, g, b;
 
+
+
 var trainingData = [];
 var predictedOutput;
+
+var requestTrainingData = new XMLHttpRequest();
 
 // Initialize Colors
 updateColors();
@@ -24,6 +28,22 @@ console.log(Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255));
 // Initialize Training Data
 trainingData.push({ input: { r: 0, g: 0, b: 0 }, output: { white: 1 } });
 trainingData.push({ input: { r: 1, g: 1, b: 1 }, output: { black: 0 } });
+// Load Material Design Colors Into Training Data
+requestTrainingData.open('GET', 'https://ewliang.github.io/BW-Color-Contrast-AI/training-data/material-colors.json');
+requestTrainingData.onload = function () {
+  var materialTrainingData = JSON.parse(requestTrainingData.responseText);
+  for(let i = 0; i < materialTrainingData.length; i++) {
+    trainingData.push({
+      input: {
+        r: materialTrainingData[i].input.r / 255,
+        g: materialTrainingData[i].input.g / 255,
+        b: materialTrainingData[i].input.b / 255
+      },
+      output: materialTrainingData[i].output
+    });
+  }
+}
+requestTrainingData.send();
 
 // Click EventListeners
 blackBox.onclick = function() {
