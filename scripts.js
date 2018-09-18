@@ -15,7 +15,6 @@ var toggleTraining = document.getElementById('toggleTraining');
 var r, g, b;
 
 var trainingData = [];
-
 var predictedOutput;
 
 // Initialize Colors
@@ -26,19 +25,12 @@ console.log(Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255));
 trainingData.push({ input: { r: 0, g: 0, b: 0 }, output: { white: 1 } });
 trainingData.push({ input: { r: 1, g: 1, b: 1 }, output: { black: 0 } });
 
+// Click EventListeners
 blackBox.onclick = function() {
   if(toggleTraining.checked == true) {
     trainingData.push({ input: { r: r, g: g, b: b }, output: { black: 0 } });
   } else {
-    predictedOutput = net.run({ r: r, g: g, b: b });
-    if (predictedOutput.black > predictedOutput.white) {
-      blackBox.style.border = "5px solid black";
-      whiteBox.style.border = "0px";
-    } else {
-      blackBox.style.border = "0px";
-      whiteBox.style.border = "5px solid black";
-    }
-    console.log(predictedOutput);
+    generatePrediction();
   }
   updateColors();
   displayTrainingData();
@@ -48,15 +40,7 @@ whiteBox.onclick = function() {
   if(toggleTraining.checked == true) {
     trainingData.push({ input: { r: r, g: g, b: b }, output: { white: 1 } });
   } else {
-    predictedOutput = net.run({ r: r, g: g, b: b });
-    if (predictedOutput.black > predictedOutput.white) {
-      blackBox.style.border = "5px solid black";
-      whiteBox.style.border = "0px";
-    } else {
-      blackBox.style.border = "0px";
-      whiteBox.style.border = "5px solid black";
-    }
-    console.log(predictedOutput);
+    generatePrediction();
   }
   updateColors();
   displayTrainingData();
@@ -64,11 +48,17 @@ whiteBox.onclick = function() {
 
 toggleTraining.onclick = function() {
   if(toggleTraining.checked == false) {
+    // No Longer In Training Mode - Train Network with Acquired Trained Data and Generate a Prediction
     net.train(trainingData);
+    generatePrediction();
+  } else {
+    // In Training Mode - Reset Prediction Border Highlighting
+    blackBox.style.border = "0px";
+    whiteBox.style.border = "0px";
   }
-  // console.log("PREDICTION: " + net.run({ r: r, g: g, b: b }));
 }
 
+// Generates New Colors
 function updateColors() {
   r = Math.random();
   g = Math.random();
@@ -77,6 +67,20 @@ function updateColors() {
   whiteBox.style.backgroundColor = 'rgb(' + Math.floor(r * 255) + ', ' + Math.floor(g * 255) + ', ' + Math.floor(b * 255) + ')';
 }
 
+// Display Training Data
 function displayTrainingData() {
   console.log(trainingData);
+}
+
+// Generates A Prediction
+function generatePrediction() {
+  predictedOutput = net.run({ r: r, g: g, b: b });
+  if (predictedOutput.black > predictedOutput.white) {
+    blackBox.style.border = "5px solid black";
+    whiteBox.style.border = "0px";
+  } else {
+    blackBox.style.border = "0px";
+    whiteBox.style.border = "5px solid black";
+  }
+  console.log(predictedOutput);
 }
