@@ -1,0 +1,16 @@
+[
+  { "input": { "r": 255, "g": 235, "b": 238 }, "output": { "black": 0 }},
+  { "input": { "r": 255, "g": 205, "b": 210 }, "output": { "black": 0 }},
+  { "input": { "r": 239, "g": 154, "b": 154 }, "output": { "black": 0 }},
+  { "input": { "r": 229, "g": 115, "b": 115 }, "output": { "black": 0 }},
+  { "input": { "r": 239, "g": 83, "b": 80 }, "output": { "white": 1 }},
+  { "input": { "r": 244, "g": 67, "b": 54 }, "output": { "white": 1 }},
+  { "input": { "r": 229, "g": 57, "b": 53 }, "output": { "white": 1 }},
+  { "input": { "r": 211, "g": 47, "b": 47 }, "output": { "white": 1 }},
+  { "input": { "r": 198, "g": 40, "b": 40 }, "output": { "white": 1 }},
+  { "input": { "r": 183, "g": 28, "b": 28 }, "output": { "white": 1 }},
+  { "input": { "r": 255, "g": 138, "b": 128 }, "output": { "black": 0 }},
+  { "input": { "r": 255, "g": 82, "b": 82 }, "output": { "white": 1 }},
+  { "input": { "r": 255, "g": 23, "b": 68 }, "output": { "white": 1 }},
+  { "input": { "r": 213, "g": 0, "b": 0 }, "output": { "white": 1 }},
+]
