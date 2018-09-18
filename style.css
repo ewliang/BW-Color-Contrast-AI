@@ -13,6 +13,20 @@
   line-height: 1.4;
 }
 
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -38,11 +52,11 @@ main div div:hover {
 }
 
 #blackText {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #000 !important;
 }
 
 #whiteText {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff !important;
 }
