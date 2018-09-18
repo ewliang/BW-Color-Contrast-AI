@@ -13,12 +13,20 @@
     <meta charset="utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
-    <title>BW Color Contrast AI</title>
+    <title>BW Color Contrast AI | Eric Liang</title>
     <link href = "style.css" rel = "stylesheet" type = "text/css">
   </head>
   <body>
     <header>
       <h1>BW Color Contrast AI</h1>
+      <span>Created by <a href = "https://www.eric-liang.com">Eric Liang</a></span>
+      <p>
+        BW Color Contrast AI is a simple machine learning webapp that predicts what colored text best contrasts a background color.
+        In this case, this webapp was designed for contrasting black text vs white text. You can train the algorithm by making sure
+        the "Enable Training?" checkbox at the bottom is checked. Then it is your responsibility to select what's the best contrasting
+        colors. Once you feel like you've trained it enough, you can uncheck the checkbox, and a border will appear around the colored
+        box that the AI thinks is best contrast for the current color.
+      </p>
     </header>
     <main>
       <div>
@@ -32,7 +40,7 @@
       <label for = "toggleTraining"><input type = "checkbox" id = "toggleTraining" checked>Enable Training?</label>
     </main>
     <footer>
-      Copyright &copy; 2018 Eric Liang. All Rights Reserved.
+      Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href = "https://www.eric-liang.com">Eric Liang</a>. All Rights Reserved.
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.3/brain.min.js"></script>
     <script type="text/javascript" src = "scripts.js"></script>
