@@ -5,6 +5,8 @@ DEMO: [https://ewliang.github.io/BW-Color-Contrast-AI/](https://ewliang.github.i
 
 ## Features
 - Generates a random background color, and it suggests what colored text (black or white) best contrasts against the background color.
+- User can toggle ON/OFF training mode.
+- AI predictions are designated via a black border surrounding its selection.
 
 ## Author
 Eric Liang
