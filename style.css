@@ -1,3 +1,13 @@
+/*
+  BW Color Contrast AI - style.css
+  Author: Eric Liang
+  Author URI: https://www.eric-liang.com
+  Author Github URI: https://www.github.com/ewliang
+  Project Repository URI: https://github.com/ewliang/BW-Color-Contrast-AI
+  Description: The main stylesheet for the BW Color Contrast AI project.
+  License: GPL v3.0
+*/
+
 main {
   display: flex;
   flex-direction: column;
