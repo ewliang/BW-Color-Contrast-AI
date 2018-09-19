@@ -49,21 +49,21 @@ requestTrainingData.send();
 blackBox.onclick = function() {
   if(toggleTraining.checked == true) {
     trainingData.push({ input: { r: r, g: g, b: b }, output: { black: 0 } });
+    displayTrainingData();
   } else {
     generatePrediction();
   }
   updateColors();
-  displayTrainingData();
 }
 
 whiteBox.onclick = function() {
   if(toggleTraining.checked == true) {
     trainingData.push({ input: { r: r, g: g, b: b }, output: { white: 1 } });
+    displayTrainingData();
   } else {
     generatePrediction();
   }
   updateColors();
-  displayTrainingData();
 }
 
 toggleTraining.onclick = function() {
