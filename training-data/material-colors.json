@@ -12,5 +12,19 @@
   { "input": { "r": 255, "g": 138, "b": 128 }, "output": { "black": 0 }},
   { "input": { "r": 255, "g": 82, "b": 82 }, "output": { "white": 1 }},
   { "input": { "r": 255, "g": 23, "b": 68 }, "output": { "white": 1 }},
-  { "input": { "r": 213, "g": 0, "b": 0 }, "output": { "white": 1 }}
+  { "input": { "r": 213, "g": 0, "b": 0 }, "output": { "white": 1 }},
+  { "input": { "r": 252, "g": 228, "b": 236 }, "output": { "black": 0 }},
+  { "input": { "r": 248, "g": 187, "b": 208 }, "output": { "black": 0 }},
+  { "input": { "r": 244, "g": 143, "b": 177 }, "output": { "black": 0 }},
+  { "input": { "r": 240, "g": 98, "b": 146 }, "output": { "black": 0 }},
+  { "input": { "r": 236, "g": 64, "b": 122 }, "output": { "white": 1 }},
+  { "input": { "r": 233, "g": 30, "b": 99 }, "output": { "white": 1 }},
+  { "input": { "r": 216, "g": 27, "b": 96 }, "output": { "white": 1 }},
+  { "input": { "r": 194, "g": 24, "b": 91 }, "output": { "white": 1 }},
+  { "input": { "r": 173, "g": 20, "b": 87 }, "output": { "white": 1 }},
+  { "input": { "r": 136, "g": 14, "b": 79 }, "output": { "white": 1 }},
+  { "input": { "r": 255, "g": 128, "b": 171 }, "output": { "black": 0 }},
+  { "input": { "r": 255, "g": 64, "b": 129 }, "output": { "white": 1 }},
+  { "input": { "r": 245, "g": 0, "b": 87 }, "output": { "white": 1 }},
+  { "input": { "r": 197, "g": 17, "b": 98 }, "output": { "white": 1 }}
 ]
