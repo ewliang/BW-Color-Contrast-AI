@@ -138,5 +138,19 @@
   { "input": { "r": 185, "g": 246, "b": 202 }, "output": { "black": 0 }},
   { "input": { "r": 105, "g": 240, "b": 174 }, "output": { "black": 0 }},
   { "input": { "r": 0, "g": 230, "b": 118 }, "output": { "black": 0 }},
-  { "input": { "r": 0, "g": 200, "b": 83 }, "output": { "black": 0 }}
+  { "input": { "r": 0, "g": 200, "b": 83 }, "output": { "black": 0 }},
+  { "input": { "r": 241, "g": 248, "b": 233 }, "output": { "black": 0 }},
+  { "input": { "r": 220, "g": 237, "b": 200 }, "output": { "black": 0 }},
+  { "input": { "r": 197, "g": 225, "b": 165 }, "output": { "black": 0 }},
+  { "input": { "r": 174, "g": 213, "b": 129 }, "output": { "black": 0 }},
+  { "input": { "r": 156, "g": 204, "b": 101 }, "output": { "black": 0 }},
+  { "input": { "r": 139, "g": 195, "b": 74 }, "output": { "black": 0 }},
+  { "input": { "r": 124, "g": 179, "b": 66 }, "output": { "black": 0 }},
+  { "input": { "r": 104, "g": 159, "b": 56 }, "output": { "black": 0 }},
+  { "input": { "r": 85, "g": 139, "b": 47 }, "output": { "white": 1 }},
+  { "input": { "r": 51, "g": 105, "b": 30 }, "output": { "white": 1 }},
+  { "input": { "r": 204, "g": 255, "b": 144 }, "output": { "black": 0 }},
+  { "input": { "r": 178, "g": 255, "b": 89 }, "output": { "black": 0 }},
+  { "input": { "r": 118, "g": 255, "b": 3 }, "output": { "black": 0 }},
+  { "input": { "r": 100, "g": 221, "b": 23 }, "output": { "black": 0 }}
 ]
