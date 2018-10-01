@@ -48,7 +48,7 @@ main {
 main div {
   display: flex;
   flex-direction: row;
-  padding: 8%;
+  padding: 5% 8%;
 }
 
 main div div {
