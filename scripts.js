@@ -83,7 +83,7 @@ function updateColors() {
   r = Math.random();
   g = Math.random();
   b = Math.random();
-  blackBox.style.backgroundColor = 'rgb(' + Math.floor(r * 255) + ', ' + Math.floor(g * 255) + ', ' + Math.floor(b * 255) + ')';
+  document.body.style.backgroundColor = 'rgb(' + Math.floor(r * 255) + ', ' + Math.floor(g * 255) + ', ' + Math.floor(b * 255) + ')';
   whiteBox.style.backgroundColor = 'rgb(' + Math.floor(r * 255) + ', ' + Math.floor(g * 255) + ', ' + Math.floor(b * 255) + ')';
 }
 
