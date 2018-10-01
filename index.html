@@ -20,23 +20,37 @@
     <header>
       <h1>BW Color Contrast AI</h1>
       <span>Created by <a href = "https://www.eric-liang.com">Eric Liang</a></span>
-      <p>
-        BW Color Contrast AI is a simple machine learning webapp that predicts what colored text (black or white) best contrasts a background color.
-        You can train the algorithm by making sure the "Enable Training?" checkbox at the bottom is checked. Then it is your responsibility
-        to select what's the best contrasting colors. Once you feel like you've trained it enough, you can uncheck the checkbox, and a border
-        will appear around the colored box that the AI thinks is best contrast for the current color.
-      </p>
+      <label for = "toggleTraining"><input type = "checkbox" id = "toggleTraining" checked>Enable Training?</label>
     </header>
     <main>
       <div>
         <div id = "blackBox">
-          <span id = "blackText">Black</span>
+          <span id = "blackText">
+            <h3>Black Text</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus leo dolor, tempor ut nisl placerat, lacinia pretium
+            odio. Proin vel aliquam odio. Nullam iaculis, massa imperdiet
+            aliquet condimentum, dui urna tristique urna, ac ultricies libero
+            sem eu ante. Curabitur volutpat erat id turpis gravida molestie
+            sed id lorem.
+            </p>
+          </span>
         </div>
         <div id = "whiteBox">
-          <span id = "whiteText">White</span>
+          <span id = "whiteText">
+            <h3>White Text</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus leo dolor, tempor ut nisl placerat, lacinia pretium
+            odio. Proin vel aliquam odio. Nullam iaculis, massa imperdiet
+            aliquet condimentum, dui urna tristique urna, ac ultricies libero
+            sem eu ante. Curabitur volutpat erat id turpis gravida molestie
+            sed id lorem.
+            </p>
+          </span>
         </div>
       </div>
-      <label for = "toggleTraining"><input type = "checkbox" id = "toggleTraining" checked>Enable Training?</label>
     </main>
     <footer>
       Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href = "https://www.eric-liang.com">Eric Liang</a>. All Rights Reserved.
