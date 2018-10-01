@@ -3,6 +3,12 @@ BW Color Contrast AI is a simple machine learning webapp that learns and suggest
 
 DEMO: [https://ewliang.github.io/BW-Color-Contrast-AI/](https://ewliang.github.io/BW-Color-Contrast-AI/)
 
+# Table of Contents
+- [Features](#features)
+- [Author](#author)
+- [Setup and Requirements](#setup-and-requirements)
+- [License](#license)
+
 ## Features
 - Generates a random background color, and it suggests what colored text (black or white) best contrasts against the background color.
 - User can toggle ON/OFF training mode.
@@ -13,7 +19,7 @@ Eric Liang
 - Website [https://www.eric-liang.com](https://www.eric-liang.com)
 - Github [https://www.github.com/ewliang](https://www.github.com/ewliang)
 
-## Setup & Requirements
+## Setup and Requirements
 
 - HTML5
 - CSS3
